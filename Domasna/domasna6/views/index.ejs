@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <p>With <%= name %></p>
+    <ul> 
+      <% names.forEach((name) => { %>
+        <li><%= name %></li> 
+      <%  })  %>
+    </ul>
+    <br>
+    <p><b>List of Countries</b></p>
+      <ul> 
+        <% countries.forEach((country) => { %>
+          <li><%= country %>
+        
+        </li> 
+        <%  })  %>
+      </ul>
+
+      <br>
+
+
+  </body>
+</html>
