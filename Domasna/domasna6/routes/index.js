@@ -6,7 +6,9 @@ router.get('/', (req, res) => {
     title: 'Express', 
     name: 'Boban', 
     names: ['Maja', 'Sanja', 'Tina'],
-    countries:['Macedonia', 'Germany', 'Spain'] });
+    countries:[{ime:'Macedonia'}, 
+                {ime:'Germany'},
+                {ime: 'Spain'}] });
 });
 
 module.exports = router;
