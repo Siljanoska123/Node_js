@@ -17,9 +17,13 @@
     <p><b>List of Countries</b></p>
       <ul> 
         <% countries.forEach((country) => { %>
-          <li><%= country %>
-        
-        </li> 
+          <% if(country.ime === "Macedonia") { %>
+          
+          <li><%= country.ime %> Cela da e!!!</li>
+          <% } else { %>
+            <li> <%=country.ime %></li>
+          <% } %> 
+          
         <%  })  %>
       </ul>
 
