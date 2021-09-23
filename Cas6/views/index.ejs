@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <p>With <%= name %></p>
+    
+<!-- 
+    <table border="1">
+      <thead>
+        <td>
+          Ime
+        </td>
+        <td>
+          Prezime
+        </td>
+        <td>
+          EMBG
+        </td>
+        <td>
+          pol
+        </td>
+      </thead>
+      <tbody>
+        <% employees.forEach(employee => { %>
+          <tr>
+            <td>
+              <%= employee.ime %>
+            </td>
+            <td>
+              <%= employee.prezime %>
+            </td>
+            <td>
+              <%= employee.EMBG %>
+            </td>
+            <td>
+              <%= employee.pol %>
+            </td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+    <form action="/employees" method="post">
+      Ime <input type="text" name="ime" /><br/>
+      Prezime <input type="text" name="prezime" /><br/>
+      EMBG <input type="number" name="EMBG" /><br/>
+      pol <input type="radio" name="pol" /><br/>
+          <label>Zenski</label>
+ 		    <input type="radio" name="pol"><label>Mashki</label><br>
+      <button type="submit">Create</button>
+    </form>  
+ -->
+
+
+ 
+ <table border="1">
+  <thead>
+    <td>
+      Model
+    </td>
+    <td>
+      Serija
+    </td>
+    <td>
+      Godina
+    </td>
+    
+  </thead>
+  <tbody>
+    <% cars.forEach(car => { %>
+      <tr>
+        <td>
+          <%= car.model %>
+        </td>
+        <td>
+          <%= car.serija %>
+        </td>
+        <td>
+          <%= car.godina %>
+        </td>
+        
+      </tr>
+    <% }); %>
+  </tbody>
+</table>
+<form action="/cars" method="post">
+  Model <input type="text" name="model" /><br/>
+  Serija <input type="text" name="serija" /><br/>
+  Godina <input type="data" name="godina"  /><br/>
+  <button type="submit">Create</button>
+</form>  
+
+
+  </body>
+</html>
