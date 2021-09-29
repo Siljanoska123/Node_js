@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Ivana's company</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Mision</a></li>
+                <li><a class="dropdown-item" href="#">Vision</a></li>
+                
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <form action="/employees" method="post" class="mt-5" style="width: 500px; margin: 0 auto;">
+      <div class="input-group">
+        <span class="input-group-text">First and Last Name</span>
+        <input type="text" aria-label="First name" class="form-control" name="first_name">
+        <input type="text" aria-label="Last name" class="form-control" name="last_name">
+      </div>
+      <div class="input-group mt-3">
+        <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2" name="email">
+        <span class="input-group-text" id="basic-addon2">@company-admin.com</span>
+      </div>
+      <div class="input-group mt-3">
+        <span class="input-group-text">$</span>
+        <input type="text" class="form-control" placeholder="Monthly Salary" aria-label="Amount (to the nearest dollar)" name="salary">
+        <span class="input-group-text">.00</span>
+      </div>
+      <button type="submit" class="btn btn-primary mt-3">Create</button>
+    </form>
+
+
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>
