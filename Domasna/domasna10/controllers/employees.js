@@ -20,5 +20,10 @@ module.exports = {
     await Employee.create(req.body);
 
     res.redirect('/employees');
+  },
+
+  postUpdate: async (req, res) => {
+    await Employee.findByIdAndUpdate(req.params.id, req.body);
+    res.redirect('/employees');
   }
 }
