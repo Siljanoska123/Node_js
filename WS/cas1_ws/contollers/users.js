@@ -31,7 +31,7 @@ module.exports = {
 
     postLogIn: async(req,res) => {
         if (await User.findOne({email: req.body.email.toLowerCase(), password: req.body.password})){
-            res.send("Log in");
+            res.send("Welcome");
         } else{
             res.send("User with email doesnot exists.Please signup");
         }
